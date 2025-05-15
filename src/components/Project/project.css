@@ -1,0 +1,96 @@
+.project{
+    min-height: 100svh;
+    width: 100%;
+    color: var(--text-white);
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 80px;
+}
+.project h1{
+    margin: 2rem;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+.project .main{
+    width:80% ;
+    display: flex;
+    gap: 1.5rem;
+    padding: 2%;
+    border: 2px solid var(--text-white);
+    border-radius: 10px;
+    background-color:#C5C5C525;
+    
+}
+
+
+
+
+.project .main .slide1, .slide2{
+    width: 50%;
+}
+.project .main .slide1{
+    border: 2px solid transparent;
+    overflow: hidden;
+    border-radius: 10px;
+    height: 350px;
+}
+.project .main .slide1 img{
+    width: 100%;
+    height: 100%;
+}
+
+.project .main .slide2{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.project .main .slide2 h2{
+    font-size: 2rem;
+    color: var(--text-white);
+    font-family: sans-serif;
+}
+
+.project .main .slide2 b{
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+}
+
+.project .main .slide2 a{
+    font-size: 1.3rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: var(--bg-black);
+    border: 2px solid transparent;
+    border-radius: 10px;
+    padding: 0.7rem 1.4rem;
+    background-color: var(--text-gray);
+    width: fit-content;
+}
+.project .main .slide2 a:hover{
+    color: red ;
+}
+
+
+
+
+@media(max-width:1125px){
+    .project .main{
+        width: 90%;
+    }
+}
+@media(max-width:850px){
+    .project .main{
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .project .main .slide1, .slide2{
+        width: 100%;
+        
+    }
+}

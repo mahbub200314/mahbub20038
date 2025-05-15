@@ -1,0 +1,24 @@
+.layout{
+    width: 100%;
+    overflow: hidden;
+    min-height: 100vh;
+    background-color: var(--bg-black);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.layout main{
+   
+    padding-top: 60px;
+    padding-bottom: 10px;
+    background-color: var(--bg-black);
+    
+}
+@media(max-width:500px){
+   .layout main{
+     padding: 60px 10px; 
+     padding-bottom: 90px;
+    background-color: var(--bg-black);
+}
+}

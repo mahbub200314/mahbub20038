@@ -1,0 +1,138 @@
+.about{
+    min-height: 100svh;
+    padding-left: 5%;
+    padding-right: 2%;
+    padding-bottom: 80px;
+    padding-top: 30px;
+    background-color: var(--bg-black2);
+    margin: -8px;
+}
+
+.about-me{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    
+
+}
+.about-me .describe{
+    width: 75%;
+
+}
+.about-me .describe h1,h2{
+    color: var(--hover-effect);
+    word-spacing: -1px;
+    letter-spacing: 1px;
+    font-weight: 800;
+    font-family:'Courier New', Courier, monospace;
+    
+}
+.about-me .describe p{
+    font-size: 1.1rem;
+}
+.about-me .describe b{
+    font-size: 1.5rem;
+    color: var(--hover-effect);
+    font-family:'Courier New', Courier, monospace;
+    line-height: 2.3rem;
+    word-spacing: 0.1px;
+    letter-spacing: 0.5px;
+}
+
+
+
+/* ............................................................. */
+
+
+.about-me .myself {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    align-items: end;
+    padding-right: 5%;
+  
+    
+}
+.about-me .myself address{
+  color: white;
+}
+
+.about-me .myself address ul{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 10px;
+  list-style: none;
+    
+}
+.about-me .myself address li u{
+    font-family: sans-serif;
+    margin-right: 10px;
+}
+.about-me .myself address li u,span{
+    display: inline;
+    margin-left: 0px;
+}
+.about-me .photo{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    /* border: 2px solid var(--text-white); */
+    
+    padding: 10px;
+}
+
+.about-me .photo img{
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid var(--primary-gradient); */
+    border-radius: 5%;
+    box-shadow: 0px 0px 15px var(--bg-black2);
+    background-color: var(--text-gray);
+
+}
+
+.skills{
+     display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.skills h2{
+    color: aqua;
+
+}
+
+.skills button{
+   
+    background-color:var(--bg-black2);
+    color: var(--text-gray);
+    border: var(--text-gray) 2px solid ;
+    border-radius: 30px;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+.skills button:hover{
+    background-color: transparent;
+    background-color: transparent;  
+    color: var(--text-white);
+    border: var(--text-gray) 2px solid ;
+}
+
+
+
+@media(max-width:865px){
+
+    .about-me{
+        flex-direction: column;
+    }
+   .about-me .describe{
+    width:100%;
+
+} 
+.about-me .myself{
+    width: 100%;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+}
