@@ -1,6 +1,6 @@
 import "./home.css" 
 
-import avatar from "../../assets/avatar.png"
+import avatar from "../../assets/my photo/Avatar.png"
 
 function Home() {
     return (
