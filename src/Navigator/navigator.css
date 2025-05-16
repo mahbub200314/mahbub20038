@@ -1,5 +1,5 @@
 .Top{
-    width: 100dvw;
+    width: 100%;
     overflow: hidden;
     height: 50px;
     background-color: var(--bg-black2);
@@ -39,6 +39,7 @@
     width: 150px;
     
     padding:0px 20px;
+    
   
    
     
@@ -129,4 +130,36 @@ nav li a .icon{
 .navigation nav li.active .icon{
     color: var(--hover-effect);
  
+}
+
+.theme-toggle-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: var(--text-white);
+  margin-left: 20px;
+  transition: color 0.3s ease;
+  border: 2px solid var(--text-gray);
+  padding: 0.2rem 1rem;
+  border-radius: 10px;
+}
+.theme-toggle-btn:hover {
+  color: var(--hover-effect);
+}
+
+/* Light mode override */
+/* .light-mode .Top {
+  background-color: var(--bg-black);
+  color: var(--text-gray);
+} */
+
+.light-mode .topIcon,
+.light-mode .theme-toggle-btn {
+  color: var(--text-gray);
+}
+
+.light-mode .topIcon:hover,
+.light-mode .theme-toggle-btn:hover {
+  color: var(--hover-effect);
 }

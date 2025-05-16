@@ -16,3 +16,11 @@
   --hover-effect:#28e98c;
 }
 
+.light-mode {
+  --bg-black: #f9f1f1;
+  --text-white: #090908;
+  --text-gray: #393737;
+  --primary-gradient:linear-gradient(to right, #FF8660,#9A33FF  ) ;
+  --bg-black2: #d6d4d4;
+  --hover-effect: #25ba81;
+}

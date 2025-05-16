@@ -1,10 +1,24 @@
 import "./navigator.css"
 import signature from '../assets/signature.png'
+import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram, faLinkedin, faGithub ,faWhatsapp} from '@fortawesome/free-brands-svg-icons';
+import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
 
 
 const TopNavbar = () => {
+
+  const [isLight, setIsLight] = useState(false);
+
+  useEffect(() => {
+    document.documentElement.classList.toggle("light-mode", isLight);
+  }, [isLight]);
+
+  const toggleTheme = () => {
+    setIsLight(!isLight);
+  };
+
+
   return (
     <div className='Top'>
       
@@ -19,6 +33,11 @@ const TopNavbar = () => {
       <li><a href="https://wa.me/8801887239062"><FontAwesomeIcon className="topIcon" icon={faWhatsapp} /></a></li>
       <li><a href="https://www.instagram.com/mahbub20038/"><FontAwesomeIcon className="topIcon" icon={faInstagram} /></a></li>
      </ul>
+
+       {/* Theme toggle button */}
+      <button onClick={toggleTheme} className="theme-toggle-btn" aria-label="Toggle Light/Dark Mode">
+        <FontAwesomeIcon icon={isLight ? faMoon : faSun} />
+      </button>
     </div>
   )
 }
