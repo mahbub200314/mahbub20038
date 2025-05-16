@@ -56,7 +56,7 @@
     
 }
 .about-me .myself address{
-  color: white;
+  color: var(--hover-effect);
 }
 
 .about-me .myself address ul{

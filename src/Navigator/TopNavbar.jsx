@@ -1,5 +1,5 @@
 import "./navigator.css"
-import signature from '../assets/signature.png'
+
 import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram, faLinkedin, faGithub ,faWhatsapp} from '@fortawesome/free-brands-svg-icons';
@@ -23,7 +23,8 @@ const TopNavbar = () => {
     <div className='Top'>
       
      <div className="logo">
-      <img src={signature} alt="signature" />
+      {/* <img src={signature} alt="signature" /> */}
+      <h1>MAHBUB</h1>
      </div>
 
      <ul>
