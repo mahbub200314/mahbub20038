@@ -15,6 +15,8 @@
     
 
 }
+
+
 .about-me .describe{
     width: 75%;
 
@@ -76,19 +78,50 @@
 .about-me .photo{
     width: 200px;
     height: 200px;
+    /* border: 2px solid var(--text-white);  */
     overflow: hidden;
-    /* border: 2px solid var(--text-white); */
-    
-    padding: 10px;
+    border-radius: 15%;
+    padding: 4px;
+    position: relative;
 }
+.about-me .photo .animation{
+    position: absolute;
+    width: 50px;
+    height: 35px;
+    background: var(--hover-effect);
+    top: 0;
+    left: 0;
+    z-index: 1;
+    animation: borders 5s linear infinite;
+    transition: all ease-in-out;
+    
+
+}
+@keyframes borders{
+     0% { top: 0; left: 0; }
+
+  25%  { top: 0; 
+         left: 90%;
+         height: 50px; 
+    }
+  50%  { top: 92%; left: 93%; }
+  75%  { top: 93%; left: 0;}
+
+  100% { top: 0; 
+          left: 0;
+          height: 50px; 
+        }
+}
+
 
 .about-me .photo img{
     width: 100%;
     height: 100%;
-    /* border: 1px solid var(--primary-gradient); */
-    border-radius: 5%;
+    border-radius: 15%;
     box-shadow: 0px 0px 15px var(--bg-black2);
     background-color: var(--text-gray);
+    z-index: 2;
+    position: relative;
 
 }
 
@@ -136,3 +169,5 @@
     margin-bottom: 1rem;
 }
 }
+
+

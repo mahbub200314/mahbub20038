@@ -8,6 +8,7 @@ const About = () => {
         <div className="myself">
 
            <div className="photo">
+            <div className="animation"></div>
              <img src={myimg} alt="" />
          </div>
          
@@ -47,6 +48,11 @@ const About = () => {
                <p>✅ CSS: I can create custom layouts, animations, and responsive designs using vanilla CSS.</p>
                <p>✅ Tailwind CSS: With the utility-first approach of Tailwind CSS, I can rapidly build consistent and responsive user interfaces, especially within React projects.</p>
                <p>✅ SASS (SCSS): I use SASS to write cleaner, modular, and maintainable code with features like nesting, variables, mixins, and functions.</p>
+            </span>
+
+            <span>
+              <b>Firebase</b>
+              <p>I integrated Firebase Authentication into my web application to enable secure and real-time user login functionality. The system supports both Email/Password authentication and Google Sign-In, ensuring flexibility for users. I also implemented protected routes and real-time auth state monitoring to maintain a smooth and secure user experience. Proper error handling and session persistence were added to enhance reliability and usability.</p>
             </span>
 
       </div>

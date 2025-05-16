@@ -1,0 +1,19 @@
+.custom-cursor {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  background-color: var(--text-white); /* আপনার পছন্দের কালার */
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  opacity: 0.4;
+  transition: top 0.10ms ease, left 0.ms ease;
+  opacity: 0.3;
+  
+}
+@media (max-width: 768px) {
+  .custom-cursor {
+    display: none;
+  }
+}

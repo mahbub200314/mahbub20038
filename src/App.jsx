@@ -5,12 +5,15 @@ import Layout from './Layout'
 import About from './components/About/About'
 import Project from './components/Project/Project'
 import MyStory from './components/My Blogs/MyStory'
+import CustomCursor from './components/cursor effect/CustomCursor'
 
 
 function App() {
 
 
   return (
+    <>
+    <CustomCursor></CustomCursor>
      <Routes>
        <Route path='/' element={<Layout/>} >
 
@@ -20,6 +23,7 @@ function App() {
          <Route path='mystory' element={<MyStory/>}/>
        </Route>
      </Routes>
+    </>
   
   )
 }
