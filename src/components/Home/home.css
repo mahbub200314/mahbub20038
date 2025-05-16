@@ -22,7 +22,7 @@
      align-items: center;
      position: relative;
     border: 0px solid var(--text-gray);
-    animation: borderGlow 3s infinite ease-in-out;
+    animation: borderGlow 4s infinite ease-in-out;
      
 }
 @keyframes borderGlow {
@@ -31,12 +31,16 @@
         box-shadow: 0 0 5px var(--text-gray);
     }
     50% {
+        border-color:var(--text-white);
+        box-shadow: 0 0 25px var(--text-white);
+    }
+    75% {
         border-color:var(--text-gray);
         box-shadow: 0 0 25px var(--text-gray);
     }
     100% {
-        border-color: var(--text-white);
-        box-shadow: 0 0 5px var(--text-white);
+        border-color: var(--bg-black);
+        box-shadow: 0 0 5px var(--bg-black);
     }
 }
      
