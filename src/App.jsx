@@ -14,13 +14,16 @@ function App() {
   return (
     <>
     <CustomCursor></CustomCursor>
+
      <Routes>
        <Route path='/' element={<Layout/>} >
 
-        <Route index   element={<Home/>}/>
-        <Route path='about' element={<About/>}/>
+         <Route index   element={<Home/>}/>
+         <Route path='about' element={<About/>}/>
          <Route path='project' element={<Project></Project>}/>
          <Route path='mystory' element={<MyStory/>}/>
+   
+   
        </Route>
      </Routes>
     </>

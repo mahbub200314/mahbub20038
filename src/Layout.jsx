@@ -7,7 +7,7 @@ const Layout = () => {
   return (
     <div className='layout'>
 
-     <div className="top">
+     <div className="top pt-50px">
            <TopNavbar/>
      </div>
         
@@ -15,7 +15,7 @@ const Layout = () => {
           <Outlet/>
         </main>
 
-        <div className="bottom">
+        <div className="bottom pb-70px">
           <BottomNavbar/>
         </div>
 

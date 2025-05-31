@@ -9,9 +9,19 @@ import nexcent from "../../assets/projects/nexcent.png"
 import fudoResturant from "../../assets/projects/Fudo-resturant.png"
 import animation from "../../assets/projects/animation.png"
 import dreamHouse from "../../assets/projects/Dream-house.png"
+import ecommerce from '../../assets/projects/e-commerce.png'
 
 const Project = () => {
       const project=[
+        
+        {
+          name : "SHOP.CO",
+          tools : "React, tailwind , firebase",
+          photo : ecommerce,
+          projectlink: "https://shop-co-e-commerce-wheat.vercel.app/",
+          describe : " SHOP.CO is dynamic user data and user secure e-commerce website. "
+        },
+        
         {
           name:"Student Dashbord",
           tools:"React, Tailwind,Firebase",
@@ -88,12 +98,12 @@ const Project = () => {
       <h1><u>Here you see my some Projects</u></h1>
 
          {
-          project.map((data)=>(
+          project.map((data,index)=>(
 
-        <div className='main'>
+        <div className='main' key={index}>
 
             <div className="slide1">
-               <img src={data.photo} alt="" />
+               <img src={data.photo} alt="project img" />
             </div>
             {/* slide1.............................. */}
 
@@ -102,7 +112,10 @@ const Project = () => {
               <h2>{data.name}</h2>
               <p>{data.describe}</p>
               <b>{data.tools}</b>
-              <a href={data.projectlink}>Link</a>
+              <div className='link'>
+                <a href={data.projectlink} target='_blank'>Link</a>
+                <a className='mr-2' href="https://github.com/mahbub200314" target='_blank'>GitHub</a>
+              </div>
             </div> 
             {/* slide.............................. */}
             

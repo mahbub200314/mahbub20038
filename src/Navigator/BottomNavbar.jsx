@@ -10,6 +10,7 @@ const BottomNavbar = () => {
   return (
     <div className='navigation'>
      <nav>
+      
       <li className={currentpath === '/'? "active":""}><Link to='/'>        <FontAwesomeIcon className='icon' icon={faHouseUser} /> <span>Home</span></Link></li>
       <li className={currentpath === '/about'? "active":""}><Link to="/about">   <FontAwesomeIcon className='icon' icon={faAddressCard} /><span>About</span></Link></li>
       <li className={currentpath === '/project'? "active":""}><Link to="/project"> <FontAwesomeIcon className='icon' icon={faBriefcase} /><span>Projects</span></Link></li>

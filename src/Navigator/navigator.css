@@ -81,6 +81,7 @@
     position: fixed;
     bottom:0;
     z-index: 100;
+   
 
 }
 .navigation nav{
@@ -165,11 +166,7 @@ nav li a .icon{
   color: var(--hover-effect);
 }
 
-/* Light mode override */
-/* .light-mode .Top {
-  background-color: var(--bg-black);
-  color: var(--text-gray);
-} */
+
 
 .light-mode .topIcon,
 .light-mode .theme-toggle-btn {

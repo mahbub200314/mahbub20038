@@ -1,5 +1,5 @@
 import './about.css'
-import myimg from '../../assets/my photo/myphoto3.png'
+import myimg from '../../assets/myphoto/myphoto3.png'
 const About = () => {
   return (
     <div className='about'>
@@ -25,6 +25,8 @@ const About = () => {
         </div>
       {/* photo................... */}
 
+      
+
       <div className="describe">
            <h1>Hi, I am Mahbubr Rahman.</h1>
            <h2>A passionate and self-taught Front-end web developer.</h2>
@@ -32,33 +34,8 @@ const About = () => {
            <p>I specialize in React, Tailwind CSS, Firebase, and SASS. I'm also skilled in using
             Git, GitHub, and Figma to build responsive, real-time web apps with clean UI and smooth UX. Always
             eager to learn and build something impactful.</p>
-
-            <span>
-              <b>React</b>
-              <p>I am proficient in React JS, a popular JavaScript library for building user interfaces. Using 
-              React’s component-based architecture, I can build modular, reusable, and scalable web applications.
-               I have experience with state management, props, React Hooks (such as useState, useEffect),
-                and React Router. I also integrate React with Tailwind CSS to create modern and responsive UI 
-                designs.
-            </p>
-            </span>
-
-            <span>
-              <b>CSS, Tailwind CSS, and SASS.</b>
-               <p>✅ CSS: I can create custom layouts, animations, and responsive designs using vanilla CSS.</p>
-               <p>✅ Tailwind CSS: With the utility-first approach of Tailwind CSS, I can rapidly build consistent and responsive user interfaces, especially within React projects.</p>
-               <p>✅ SASS (SCSS): I use SASS to write cleaner, modular, and maintainable code with features like nesting, variables, mixins, and functions.</p>
-            </span>
-
-            <span>
-              <b>Firebase</b>
-              <p>I integrated Firebase Authentication into my web application to enable secure and real-time user login functionality. The system supports both Email/Password authentication and Google Sign-In, ensuring flexibility for users. I also implemented protected routes and real-time auth state monitoring to maintain a smooth and secure user experience. Proper error handling and session persistence were added to enhance reliability and usability.</p>
-            </span>
-
-      </div>
-      {/* about-me end ........... */}
-     </div>
-      
+                
+                
        <div className='skills'>
 
         <button>HTML</button>
@@ -72,6 +49,46 @@ const About = () => {
         <button>git</button>
         <button>GitHub</button>
        </div>
+            <span>
+              <b>React</b>
+              <p>I am proficient in React JS, a popular JavaScript library for building user interfaces. Using 
+              React’s component-based architecture, I can build modular, reusable, and scalable web applications.
+               I have experience with state management, props, React Hooks (such as useState, useEffect),
+                and React Router. I also integrate React with Tailwind CSS to create modern and responsive UI 
+                designs.
+            </p>
+            </span>
+               <hr />
+            <span>
+              <b>CSS, Tailwind CSS, and SASS.</b>
+               <p>✅ CSS: I can create custom layouts, animations, and responsive designs using vanilla CSS.</p>
+               <p>✅ Tailwind CSS: With the utility-first approach of Tailwind CSS, I can rapidly build consistent and responsive user interfaces, especially within React projects.</p>
+               <p>✅ SASS (SCSS): I use SASS to write cleaner, modular, and maintainable code with features like nesting, variables, mixins, and functions.</p>
+            </span>
+               <hr />
+            <span>
+              <b>Firebase</b>
+              <p>I integrated Firebase Authentication into my web application to enable secure and real-time user login functionality. The system supports both Email/Password authentication and Google Sign-In, ensuring flexibility for users. I also implemented protected routes and real-time auth state monitoring to maintain a smooth and secure user experience. Proper error handling and session persistence were added to enhance reliability and usability.</p>
+            </span>
+
+      </div>
+      {/* about-me end ........... */}
+     </div>
+{/*       
+       <div className='skills'>
+
+        <button>HTML</button>
+        <button>CSS</button>
+        <button>Tailwind</button>
+        <button>SASS</button>
+        <button>Javascript</button>
+        <button>React</button>
+        <button>Redux</button>
+        <button>Firebase</button>
+        <button>Figma</button>
+        <button>git</button>
+        <button>GitHub</button>
+       </div> */}
 
     </div>
   )

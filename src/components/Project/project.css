@@ -76,7 +76,10 @@
 }
 
 
-
+.link {
+    display: flex;
+    gap: 10px;
+}
 
 @media(max-width:1125px){
     .project .main{
