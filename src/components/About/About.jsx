@@ -19,6 +19,7 @@ const About = () => {
             <li> <u>District: </u> <span> Feni</span></li>
             <li><u>Date fo birth : </u> <span> 14/8/2003</span></li>
             <li><u>Mobile : </u> <span> 01887239062</span></li>
+            
           </ul>
         </address>
 
@@ -49,6 +50,24 @@ const About = () => {
         <button>git</button>
         <button>GitHub</button>
        </div>
+
+             <span>
+              <b>Next JS</b>
+              <p>I am now still learning Next JS for increasing  my front-end web development experience and knowledge</p>
+             </span>
+             <hr />
+              <span>
+                <b>JavaScript</b>
+                <p>
+                  I have solid experience with JavaScript, which I use to build dynamic and interactive web applications. I’m confident in working with core concepts like DOM manipulation, event handling, async operations (Promises, async/await), and API integration.
+
+Modern ES6+ features like arrow functions, destructuring, template literals, and array methods (map, filter, reduce) are part of my regular workflow. I also have a clear understanding of deeper JavaScript concepts such as closures, callbacks, scope, and prototypes, which help me write clean, modular, and efficient code.
+
+I apply JavaScript effectively in React projects for smooth user interactions, and I’m continuously expanding my knowledge through real-world projects and hands-on development.
+
+                </p>
+              </span>
+              <hr />
             <span>
               <b>React</b>
               <p>I am proficient in React JS, a popular JavaScript library for building user interfaces. Using 

@@ -1,13 +1,16 @@
 import "./home.css" 
 
 import avatar from "../../assets/myphoto/Avatar.png"
-
+import resume from '../../assets/myphoto/Untitled document.pdf'
 import { RiTailwindCssFill } from "react-icons/ri";
 import { BiLogoSass } from "react-icons/bi";
 import { IoLogoFirebase } from "react-icons/io5";
 import { TbBrandJavascript } from "react-icons/tb";
 import { FaHtml5 } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
+import { Link } from "react-router";
+
+
 
 function Home() {
     return (
@@ -31,9 +34,9 @@ function Home() {
                       
               </div>
              <div className="button">
-                <a href="https://wa.me/8801887239062">Get In Touch</a>
-                <a  href="#">See Resume</a>
-           
+                <a href="https://wa.me/8801887239062" target="_blank">Get In Touch</a>
+                <Link to='resume'> See Resume</Link>
+
                 
              </div>
         </div>
