@@ -5,7 +5,7 @@ import { Link, useLocation } from 'react-router';
 const BottomNavbar = () => {
 
   const location = useLocation();
-  console.dir(location)
+ 
   const currentpath = location.pathname;
   return (
     <div className='navigation'>

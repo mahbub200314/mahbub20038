@@ -8,6 +8,8 @@
     justify-content: center;
     align-items: center;
     padding-bottom: 80px;
+    padding-top: 70px;
+    position: relative;
 }
 .project h1{
     margin: 2rem;
@@ -100,4 +102,123 @@
     .project .main .slide1{
       height: 300px;
 }
+}
+
+
+
+
+
+
+.uploadButton{
+    border: transparent;
+    padding: 1rem 1.8rem;
+    cursor: pointer;
+    position:  fixed;
+    top: 48px;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    font-size: 1.2rem;
+    font-family: poppins;
+    font-weight: bold;
+    box-shadow:  -10px 10px 5px #4e4d4d25;
+    z-index: 5;
+    border-radius: 0px 0px 5px 5px;
+}
+
+
+.uploadButton:hover{
+    background-color: rgb(50, 16, 224);
+    color:whitesmoke;
+    
+   
+}
+
+
+
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 3.5rem;
+    background-color: #C5C5C525 ;
+    gap: 2px;
+}
+
+form input{
+    padding: 1rem;
+    font-family: poppins;
+}
+form button{
+     width: fit-content;
+     display: flex;
+     align-self: center;
+     margin-top: 10px;
+     padding: 0.5rem 1rem;
+     border-radius: 5px;
+     border: transparent;
+     outline: none;
+     cursor: pointer;
+     font-family: poppins;
+     font-weight: bold;
+}
+
+form button:hover{
+    background-color: aqua;
+}
+
+
+
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* black semi-transparent overlay */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.modalContent input {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.modalContent button {
+  padding: 0.7rem 1.2rem;
+  background-color: #1f2937;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background: none;
+  border: none;
+  cursor: pointer;
 }

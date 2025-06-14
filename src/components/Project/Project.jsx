@@ -1,5 +1,6 @@
 import './project.css'
 
+import { FaPlus } from "react-icons/fa6";
 
 import dashbord from "../../assets/projects/dashbord.jpg"
 import weather from "../../assets/projects/weather.png"
@@ -10,6 +11,10 @@ import fudoResturant from "../../assets/projects/Fudo-resturant.png"
 import animation from "../../assets/projects/animation.png"
 import dreamHouse from "../../assets/projects/Dream-house.png"
 import ecommerce from '../../assets/projects/e-commerce.png'
+import { useEffect, useState } from 'react'
+import { addDoc, onSnapshot } from 'firebase/firestore'
+import { collection } from 'firebase/firestore'
+import { db } from '../../firebase'
 
 const Project = () => {
       const project=[
@@ -90,12 +95,141 @@ const Project = () => {
       ]
    
 
-        console.dir(project)
+      // upload option create now 11.6.2025.....................
+
+        const [showForm , setShowForm] = useState(false)
+        const [download , setDownload] = useState([])
+        const [projects , setProjects] =useState({
+               
+          name :'',
+          tools :'',
+          photo : '',
+          projectlink : '',
+          describe :''
+          
+        })
+
+//upload project .......................
+
+        const handleChange = (e) =>{
+              setProjects({...projects, [e.target.name]: e.target.value})
+        };
+
+        const formSubmit = async (e)=> {
+          e.preventDefault()
+          try{
+            const docRef = await addDoc(collection(db, 'projects'), projects);
+            alert('project uploaded succusfully');
+            setProjects({
+           name :'',
+          tools :'',
+          photo : '',
+          projectlink : '',
+          describe :''
+            })
+            setShowForm(false)
+          }catch(e){
+            console.error('error here : ', e);
+            alert('failed upload project')
+          }
+          
+        }
+// ui show project to firebase store...............
+useEffect(()=>{
+  const unsub = onSnapshot(collection(db, 'projects'), 
+(snapshot)=>{const list = snapshot.docs.map(doc => ({id: doc.id, ...doc.data() }))
+  setDownload(list)
+  console.log(download)
+});
+return ()=> unsub()
+},[])
+
   return (
   
     <div className='project'>
 
       <h1><u>Here you see my some Projects</u></h1>
+
+
+      <button className='uploadButton'
+
+       onClick={ ()=>{
+
+        const adminPassword = prompt('Enter admin code : ');
+        if( adminPassword === '81434MR'){
+          setShowForm(true)
+        }else{
+          alert('Your code is wrong')
+          setShowForm(false)
+        }
+
+
+       }
+      
+      
+      }>
+        {showForm ?   ' Close Upload Form' : <><FaPlus className='uploadIcon'/> Uplad Project</>}</button>
+      
+     {
+  showForm && (
+    <div className="modalOverlay">
+      <div className="modalContent">
+        <button className="closeBtn" onClick={() => setShowForm(false)}>×</button>
+        <form onSubmit={formSubmit}>
+          <input type="text" placeholder='Project Name' name='name' value={projects.name} onChange={handleChange} required />
+          <input type="text" placeholder='Project Tools' name='tools' value={projects.tools} onChange={handleChange} required />
+          <input type="text" placeholder='Project photo' name='photo' value={projects.photo} onChange={handleChange} required />
+          <input type="text" placeholder='Project Project link' name='projectlink' value={projects.projectlink} onChange={handleChange} required />
+          <input type="text" placeholder='Project describe' name='describe' value={projects.describe} onChange={handleChange} required />
+          <button type='submit'> Submit Project</button>
+        </form>
+      </div>
+    </div>
+  )
+}
+
+
+
+{
+          download.map((data,index)=>(
+
+        <div className='main' key={index}>
+        
+            <div className="slide1">
+               <img src={data.photo} alt="project img" />
+            </div>
+            {/* slide1.............................. */}
+
+
+            <div className="slide2">
+              <h2>{data.name}</h2>
+              <p>{data.describe}</p>
+              <b>{data.tools}</b>
+              <div className='link'>
+                <a href={data.projectlink} target='_blank'>Link</a>
+                <a className='mr-2' href="https://github.com/mahbub200314" target='_blank'>GitHub</a>
+              </div>
+            </div> 
+            {/* slide.............................. */}
+            
+        </div>
+
+          ))
+         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+{/* {/................................................} */}
 
          {
           project.map((data,index)=>(
