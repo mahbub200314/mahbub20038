@@ -109,7 +109,10 @@ p{
     font-weight: 100;
      color: var(--text-gray);
      margin: 0.7rem 0rem;
-     font-family:'Courier New', Courier, monospace;
+     /* font-family:'Courier New', Courier, monospace; */
+     font-family: poppins;
+     word-spacing: 1px;
+     line-height: 28px;
 }
 
 .button{

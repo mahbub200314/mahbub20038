@@ -15,7 +15,7 @@ const About = () => {
         <address>
           <ul>
             <li><u>Student : </u> <span> philosophy</span></li>
-            <li><u>Natinaliy : </u> <span>Bangladesh</span></li>
+            <li><u>Nationality : </u> <span>Bangladesh</span></li>
             <li> <u>District: </u> <span> Feni</span></li>
             <li><u>Date fo birth : </u> <span> 14/8/2003</span></li>
             <li><u>Mobile : </u> <span> 01887239062</span></li>
@@ -29,7 +29,7 @@ const About = () => {
       
 
       <div className="describe">
-           <h1>Hi, I am Mahbubr Rahman.</h1>
+           <h1>Hi, I am Mahbubur Rahman.</h1>
            <h2>A passionate and self-taught Front-end web developer.</h2>
 
            <p>I specialize in React, Tailwind CSS, Firebase, and SASS. I'm also skilled in using
