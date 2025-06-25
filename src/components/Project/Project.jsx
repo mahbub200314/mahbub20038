@@ -1,4 +1,6 @@
 import './project.css'
+ 
+import Animation3 from '../animation/Animation3';
 
 import { FaPlus } from "react-icons/fa6";
 
@@ -15,6 +17,7 @@ import { useEffect, useState } from 'react'
 import { addDoc, onSnapshot } from 'firebase/firestore'
 import { collection } from 'firebase/firestore'
 import { db } from '../../firebase'
+
 
 const Project = () => {
       const project=[
@@ -147,7 +150,10 @@ return ()=> unsub()
   return (
   
     <div className='project'>
-
+       
+       <div className="animation3">
+        <Animation3 className='animation3rd'></Animation3>
+       </div>
       <h1><u>Here you see my some Projects</u></h1>
 
 

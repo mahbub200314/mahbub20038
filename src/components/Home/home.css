@@ -12,12 +12,20 @@
  
     background: var(--bg-black);
     color: var(--text-white);
-    padding-bottom: 85px;
-    padding-top: 20px;
+    padding-bottom: 75px;
+    padding-top: 5px;
      
 
    
 }
+
+@media (max-width: 450px){
+   .home{
+    padding-bottom: 10px;
+    min-height: 80vh;
+   }
+}
+
 .home .reactIcon{
      margin: 0px 5px;
     color: var(--text-white);
@@ -57,7 +65,7 @@
     animation: borderGlow 4s infinite ease-in-out;
      
 }
-@keyframes borderGlow {
+/* @keyframes borderGlow {
     0% {
         border-color: var(--text-gray);
         box-shadow: 0 0 5px var(--text-gray);
@@ -75,7 +83,7 @@
         box-shadow: 0 0 5px var(--bg-black);
     }
 }
-     
+      */
 @media (max-width: 450px){
    .img{
     width: 120px;

@@ -9,6 +9,7 @@ import { TbBrandJavascript } from "react-icons/tb";
 import { FaHtml5 } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
 import { Link } from "react-router";
+import Animation from "../animation/Animation";
 
 
 
@@ -18,7 +19,8 @@ function Home() {
           
           <div className="img"> 
            
-            <img src={avatar} alt="" width={100}/>
+           <Animation/>
+            {/* <img src={avatar} alt="" width={100}/> */}
             </div>
 
            <b>I do code and <br></br> make website <span>about it!</span></b>

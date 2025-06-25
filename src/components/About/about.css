@@ -12,7 +12,7 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 1rem;
-    
+   
 
 }
 
@@ -21,6 +21,15 @@
     width: 75%;
 
 }
+
+.span{
+   
+    background-color: var(--transfarent-about);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 30px 0px;
+}
+
 .describe hr{
     margin: 30px 0px;
     color:whitesmoke;
@@ -108,7 +117,7 @@
     
 
 }
-@keyframes borders{
+/* @keyframes borders{
      0% { top: 0; left: 0; }
 
   25%  { top: 0; 
@@ -122,7 +131,7 @@
           left: 0;
           height: 50px; 
         }
-}
+} */
 
 
 .about-me .photo img{
