@@ -28,6 +28,13 @@
     border-radius: 10px;
     padding: 10px;
     margin: 30px 0px;
+    transition: all 5ms ease;
+    transition-duration: 5ms;
+    transition-property: all;
+    transform-style:unset;
+}
+.span:hover{
+    border: 2px solid rgb(120, 120, 234);
 }
 
 .describe hr{

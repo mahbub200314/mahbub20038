@@ -196,13 +196,15 @@ return ()=> unsub()
 
 
 
+
+
 {
           download.map((data,index)=>(
 
         <div className='main' key={index}>
         
             <div className="slide1">
-               <img src={data.photo} alt="project img" />
+               <img src={data.photo} loading='lazy' alt="project img" />
             </div>
             {/* slide1.............................. */}
 
@@ -243,7 +245,7 @@ return ()=> unsub()
         <div className='main' key={index}>
 
             <div className="slide1">
-               <img src={data.photo} alt="project img" />
+               <img src={data.photo} loading='lazy' alt="project img" />
             </div>
             {/* slide1.............................. */}
 
