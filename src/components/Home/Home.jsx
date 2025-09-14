@@ -37,7 +37,7 @@ function Home() {
               </div>
              <div className="button">
                 <a href="https://wa.me/8801887239062" target="_blank">Get In Touch</a>
-                <Link to='resume'> See Resume.</Link>
+                <Link to='resume'> See Resume</Link>
 
                 
              </div>
