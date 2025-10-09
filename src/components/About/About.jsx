@@ -14,6 +14,7 @@ const About = () => {
             {/* <img src={myimg} alt="" /> */}
           </div>
 
+
           <address>
             <ul>
               <li><u>Student : </u> <span> philosophy</span></li>
