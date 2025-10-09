@@ -5,11 +5,12 @@
     display: flex;
     flex-direction: column;
     gap:2rem;
-    justify-content: center;
+    
     align-items: center;
     padding-bottom: 80px;
     padding-top: 70px;
     position: relative;
+    overflow-y: auto;
 }
 .project h1{
     margin-bottom: 2rem;

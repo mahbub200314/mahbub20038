@@ -1,4 +1,4 @@
-import resume from '../../src/assets/myphoto/Untitled document.pdf'
+import resume from '../../src/assets/resumeAndCv/MAHUB-Resume.pdf'
 
 const Resume = () => {
     console.log('resume')
