@@ -94,6 +94,11 @@ const About = () => {
             <p>I integrated Firebase Authentication into my web application to enable secure and real-time user login functionality. The system supports both Email/Password authentication and Google Sign-In, ensuring flexibility for users. I also implemented protected routes and real-time auth state monitoring to maintain a smooth and secure user experience. Proper error handling and session persistence were added to enhance reliability and usability.</p>
           </div>
 
+          <div className="span">
+            <b>Redux-Toolkit</b>
+            <p>Proficient in Redux Toolkit (RTK). Experienced in modern state management for complex applications, including creating slices, configuring stores, and handling asynchronous data with RTK Query or thunks. Proven ability to write efficient and scalable Redux logic.</p>
+          </div>
+
         </div>
         {/* about-me end ........... */}
       </div>
