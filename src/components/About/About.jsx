@@ -47,6 +47,8 @@ const About = () => {
             <button>SASS</button>
             <button>Javascript</button>
             <button>React</button>
+            <button>Redux-Toolkit</button>
+            <button>TanStack</button>
             <button>Firebase</button>
             <button>Figma</button>
             <button>git</button>
