@@ -1,5 +1,5 @@
 import './about.css'
-import myimg from '../../assets/myphoto/myphoto3.png'
+
 import Animation2 from '../animation/Animation2'
 const About = () => {
   return (
