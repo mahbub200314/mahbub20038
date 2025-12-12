@@ -18,7 +18,7 @@
 @media(max-width:500px){
    .layout main{
      padding: 60px 10px; 
-     padding-top: 10px;
+     padding-top: 30px;
      padding-bottom: 90px;
     background-color: var(--bg-black);
 }
