@@ -103,15 +103,29 @@ b{
     word-spacing: 0.3rem;
     letter-spacing: 2px;
     line-height: clamp(2rem, 4dvw, 4dvw);
- 
     width: 100%;
+ 
 }
+
+
+
 b span {
- display: inline;
+  display:inline; 
   background: var(--primary-gradient);
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  animation: typing 2s steps(30) infinite alternate-reverse;
+  width: 10ch;
+ 
 }
+
+@keyframes typing{
+    from{
+        width: 0ch;
+    }
+}
+
+
 p{
     font-size: clamp(14px, 2vw , 20px);
     font-weight: 100;

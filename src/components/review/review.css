@@ -1,0 +1,310 @@
+*{
+   
+    margin: 0px;
+    padding: 0px;
+     box-sizing: border-box;
+}
+.reviewPage header h2{
+    font-size: clamp(1.8rem , 2.5vw, 2.5rem);
+    margin: 0.5rem 0rem;
+}
+.reviewPage{
+    background-color: var(--bg-reviewPage1);
+   /* background: linear-gradient(to bottom, #444444 3%, #000000 100%);; */
+    width: 100%;
+    min-height: 100vh;
+    margin-top: -1.1rem;
+    padding: 2.2rem 0.5rem;
+    padding-top: 1.5rem;
+
+
+}
+section{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem ;
+    justify-content:center;
+}
+.reviewPreview{
+    display: flex;
+    gap:2rem;
+    align-items: center;
+    background: var(--bg-reviewPage) ;
+    padding: 1rem;
+    border-radius: 1rem;
+     max-width: 400px;
+     width: 100%;
+     border: 2px solid #101726;
+     
+     backdrop-filter: blur(10px);
+}
+@media(max-width:832px){
+ /* .reviewPreview{
+       max-width: 600px;
+     width: 100%; 
+ } */
+}
+
+.ratingIcon {
+     color: yellow;
+     padding: 0.5rem 1rem;
+     border-radius: 1rem;
+    font-size: clamp(1.8rem, 2.5vw , 3rem);
+    background-color: #1f1c12;
+}
+
+.reviewIcon {
+     color: #2b7fff;
+     padding: 0.1rem 1rem;
+     padding-top: 0.7rem ;
+     border-radius: 1rem;
+    font-size: clamp(1.8rem, 2.5vw , 3rem);
+    background-color: #0b182c;
+}
+
+.fiveStarIcon{
+    background-color: #071f1a;
+    color: #2b7fff;
+     padding: 0.5rem 1rem;
+     padding-bottom: 0.3rem;
+     border-radius: 1rem;
+    font-size: clamp(1.8rem, 2.5vw , 3rem);
+    color: #00c950;
+}
+
+.previewDiscription{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+
+    
+    
+}
+.previewDiscription p{
+    
+    margin-top: -5px;
+}
+
+.previewDiscription span b{
+    font-size: 1.3rem;
+    line-height: 1;
+
+}
+
+hr{
+    width: 100%;
+    color: rgb(73, 72, 72);
+    padding: 0%;
+    margin: 3rem 0rem;
+}
+
+
+.reviewPage .filter button{
+    
+    background-color: #1e2939;
+    color: whitesmoke;
+    font-family: sans-serif;
+    font-size: 1rem;
+    border: transparent;
+    margin: 0.3rem 0.2rem;
+    padding:0.7rem 1.1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+
+}
+.reviewPage main{
+background-color: transparent;
+display: flex;
+gap: 3rem;
+padding: 1rem 2rem;
+
+}
+
+
+.reviewPage main aside{
+    width: 30%;
+    padding-top: 1rem;
+    
+}
+
+.reviewPage main .slide1{
+    width: 70%;
+}
+
+
+.reviewPage .cards{
+    max-height: 80vh;
+    overflow: auto;
+    scrollbar-width: none;
+}
+/* .reviewPage .cards */
+
+.reviewPage .card{
+    background-color: var(--bg-reviewPage);
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0rem;
+    border: 1px solid #ad6beb;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.reviewPage .card img{
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: 2px solid gold;
+}
+
+.reviewPage .title{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.reviewPage .title .p{
+    background-color: #1e2939;
+    height: fit-content;
+    padding: 0.5rem;
+    color: aliceblue;
+    border: 1px solid white ;
+    border-radius: 3rem;
+}
+
+.reviewPage .rolesAndImg{
+    display: flex;
+    gap: 1rem;
+
+}
+
+.reviewPage .rolesAndImg .role{
+    display: flex;
+    flex-direction: column;
+    gap: 0.1px;
+    
+}
+.reviewPage .title h3{
+    color: var(--text-white);
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    
+}
+
+
+.reviewPage .title p{
+    line-height: 1;
+    font-size: 1.1rem;
+    
+
+}
+
+
+
+
+.reviewPage aside b{
+  color: var(--text-white);
+  font-size: 1.5rem;
+  font-family: popins;
+  letter-spacing: 1px;
+  margin-left: 1rem;
+}
+
+.reviewPage u{
+    color: var(--hover-effect);
+}
+
+
+.reviewPage form{
+    width: 100%;
+    padding: 0px;
+    padding: 1rem;
+    border: 1px solid #5708a1;
+    border-radius: 1rem;
+
+}
+.reviewPage form:hover{
+    filter: drop-shadow(0px 0px 3px #5708a1);
+}
+
+.reviewPage form input{
+    width: 100% !important;
+    border-radius: 1.5rem;
+    border: transparent;
+    margin: 0.5rem 0rem;
+    padding: 1.4rem 1rem;
+    
+}
+.reviewPage form textarea{
+    padding: 1rem;
+    font-family:'Courier New', Courier, monospace;
+    width: 100% !important;
+    border-radius: 1rem;
+    border: transparent;
+    min-height: 8rem;
+    margin-top: 0.8rem;
+    
+}
+
+.reviewPage form button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.1rem;
+    font-family: sans-serif;
+    padding: 0.8rem 2rem;
+}
+.reviewPage form button:hover .i{
+      transform: rotate(-0deg);
+}
+.reviewPage form button .i{
+    transform: rotate(-60deg);
+    transition: all 15ms ease-in;
+}
+.ratingStarIcon{
+  color:rgb(189, 184, 184);
+  font-size: 1.8rem;
+  margin: 0.6rem 0.6rem;
+  cursor: pointer;
+
+}
+.ratingStarIcon:hover{
+  color: yellow;
+ 
+}
+
+
+@media(max-width:994px){
+    .reviewPage main{
+        flex-direction:column-reverse
+
+    }
+
+    .reviewPage main aside{
+    width: 100%;
+    padding-top: 1rem;
+    
+}
+
+.reviewPage main .slide1{
+    width: 100%;
+}
+
+.reviewPage form button{
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    
+
+    padding: 0.8rem 2rem;
+}
+
+.reviewPage{
+    padding: 1rem;
+}
+.reviewPage main{
+    padding: 0rem;
+}
+}

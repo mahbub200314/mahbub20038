@@ -1,6 +1,6 @@
 import './navigator.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHouseUser, faAddressCard,faBriefcase,faUserTie} from '@fortawesome/free-solid-svg-icons'
+import { faHouseUser, faAddressCard,faBriefcase,faUserTie, faComment} from '@fortawesome/free-solid-svg-icons'
 import { Link, useLocation } from 'react-router';
 const BottomNavbar = () => {
 
@@ -15,7 +15,7 @@ const BottomNavbar = () => {
       <li className={currentpath === '/about'? "active":""}><Link to="/about">   <FontAwesomeIcon className='icon' icon={faAddressCard} /><span>About</span></Link></li>
       <li className={currentpath === '/project'? "active":""}><Link to="/project"> <FontAwesomeIcon className='icon' icon={faBriefcase} /><span>Projects</span></Link></li>
       <li className={currentpath === '/mystory'? "active":""}><Link to="/mystory"> <FontAwesomeIcon className='icon' icon={faUserTie} /><span>Story</span></Link></li>
-      
+      <li className={currentpath === '/review' ? 'active':''}><Link to='/review'> <FontAwesomeIcon className='icon' icon={faComment}/> <span>Review</span></Link></li>
      </nav>
     </div>
   )

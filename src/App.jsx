@@ -2,15 +2,14 @@ import { BrowserRouter, Route, Routes } from 'react-router'
 import './App.css'
 import Home from './components/Home/Home'
 import Layout from './Layout'
-// import About from './components/About/About'
-// import Project from './components/Project/Project'
-//import MyStory from './components/My Blogs/MyStory'
 import CustomCursor from './components/cursor effect/CustomCursor'
 import Resume from './components/Resume'
 import { lazy, Suspense } from 'react'
 import Project from './components/Project/Project'
 import About from './components/About/About'
 import MyStory from './components/My Blogs/MyStory'
+import Reviews from './components/review/Reviews'
+import MyStoryDetails from './components/My Blogs/MyStoryDetails'
 
 const about = lazy(()=> import('./components/About/About'))
 const project = lazy(() => import('./components/Project/Project'))
@@ -43,6 +42,18 @@ function App() {
               <MyStory></MyStory>
             </Suspense>
           } />
+          <Route path='review' element={
+            <Suspense fallback={<div>Loading...</div>}>
+              <Reviews></Reviews>
+            </Suspense>
+          }/>
+
+          <Route path='/story/:id' element={
+            <Suspense fallback={<div>Loading...</div>} >
+               <MyStoryDetails/>
+            </Suspense>
+          } />
+
           <Route path='resume' element={<Resume />} />
 
         </Route>

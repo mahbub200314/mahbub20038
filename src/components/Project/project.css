@@ -20,7 +20,7 @@
 }
 .project .main{
     width:80% ;
-    display: flex;
+    display: flex ;
     gap: 1.5rem;
     padding: 2%;
     border: 2px solid var(--text-white);

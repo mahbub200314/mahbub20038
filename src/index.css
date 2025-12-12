@@ -15,6 +15,10 @@
   --bg-black2:#1e1e1d;
   --hover-effect:#28e98c;
   --transfarent-about:rgba(74, 74, 74, 0.5);
+
+  /* review page */
+  --bg-reviewPage1:#000000;
+  --bg-reviewPage:#080c14;
 }
 
 .light-mode {
@@ -26,3 +30,4 @@
   --hover-effect: #25ba81;
 --transfarent-about:rgba(226, 221, 221, 0.5);
 }
+

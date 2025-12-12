@@ -54,6 +54,16 @@
 .Top .logo h1{
     font-size: clamp(1.2rem,2.5vw, 2rem);
     font-family: 'Courier New', Courier, monospace;
+
+
+
+
+
+
+
+
+
+
 }
 /* ...............botton navbar here-------------------------------------------------- */
 @media(max-width:390px){
@@ -105,7 +115,7 @@
     width: 100%;
     margin-bottom: 0px;
     border-radius: 0px;
-
+     gap: 2.2rem;
 }
 }
 nav li{
@@ -123,6 +133,8 @@ nav li a,span{
     color: var(--text-gray);
     font-family: 'Courier New', Courier, monospace;
     font-weight: bolder;
+    transition: all ease-in 0.5ms;
+    transition-duration: 1s;
     
     
 }
@@ -141,8 +153,18 @@ display: block;
 nav li a .icon{
     font-size:2rem;
     color: var(--text-white);
+    transition: all ease-in 5ms;
 }
 
+@media(max-width:360px){
+nav li a .icon{
+    font-size: 1.5rem;
+}
+
+nav li span{
+    font-size: 0.6rem;
+}
+}
 
 
 .navigation nav li.active .icon{
