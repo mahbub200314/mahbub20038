@@ -15,7 +15,7 @@ const MyStoryDetails = () => {
          </header>
          
         <div className="details">
-        <img src={storyDetais.img}  alt="" />
+        <img src={storyDetais.img} loading="lazy" alt="" />
         <span>{storyDetais.time}</span>
         <h2>{storyDetais.title}</h2>
         <p>{storyDetais.description}</p>

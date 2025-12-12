@@ -124,9 +124,24 @@ b span {
         width: 0ch;
     }
 }
-
-
-p{
+.mobile{
+    display: none;
+    font-size: clamp(14px, 2vw , 20px);
+    font-weight: 100;
+     color: var(--text-gray);
+     margin: 0.5rem 0rem;
+     /* font-family:'Courier New', Courier, monospace; */
+     font-family: poppins;
+     word-spacing: 1px;
+     line-height: 28px;
+}
+@media(max-width:455px){
+    .mobile{
+        display: block;
+    }
+}
+.tab{
+    display: none;
     font-size: clamp(14px, 2vw , 20px);
     font-weight: 100;
      color: var(--text-gray);
@@ -135,6 +150,11 @@ p{
      font-family: poppins;
      word-spacing: 1px;
      line-height: 28px;
+}
+@media(min-width:455px){
+  .tab{
+    display: block;
+  }
 }
 
 .button{

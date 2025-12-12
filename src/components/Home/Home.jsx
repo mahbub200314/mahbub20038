@@ -27,8 +27,12 @@ function Home() {
             </div>
 
             <b>I do code and <br></br> make website <span>about it!</span></b>
-            
-            <p>Hi, I'm Mahbub — a passionate and self-taught Front-end Web Developer.<br></br>
+
+               <p className="mobile">Hi, I'm Mahbub — a passionate and self-taught Front-end Web Developer.
+                 Let me know what kind of website you need — I’m fully prepared to deliver it with dedication, InshaAllah.
+                 Feel free to communicate openly with me at any time.
+            </p>
+            <p className="tab">Hi, I'm Mahbub — a passionate and self-taught Front-end Web Developer.<br></br>
                  Let me know what kind of website you need — I’m fully prepared to deliver it with dedication, InshaAllah.<br />
                  Feel free to communicate openly with me at any time.
             </p>
