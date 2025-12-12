@@ -23,7 +23,9 @@
    .home{
     padding-bottom: 10px;
     min-height: 80vh;
+    gap: 0.5rem;
    }
+
 }
 
 .home .reactIcon{
@@ -55,7 +57,6 @@
 .img{
      width: 150px;
      height: 150px;
-     border-radius: 100%;
      overflow: hidden;
      display: flex;
      justify-content: center;
