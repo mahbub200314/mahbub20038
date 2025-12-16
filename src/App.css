@@ -15,6 +15,17 @@
     background-color: var(--bg-black);
     
 }
+p{
+    
+    font-size: clamp(14px, 2vw , 20px);
+    font-weight: 100;
+     color: var(--text-gray);
+     margin: 0.7rem 0rem;
+     /* font-family:'Courier New', Courier, monospace; */
+     font-family: poppins;
+     word-spacing: 1px;
+     line-height: 28px;
+}
 @media(max-width:500px){
    .layout main{
      padding: 60px 10px; 

@@ -1,0 +1,111 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.body{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(../src/assets/myphoto/adminlogo.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+ .body form{
+    border: 1px solid rgb(127, 126, 126);
+    border-radius: 1rem;
+    max-width: 400px;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    outline: white;
+    filter: drop-shadow(0px 0px 15px rgb(195, 193, 193));
+}
+ 
+
+.body form img{
+    width: 100px;
+    align-self: center;
+    border-radius: 1rem;
+    
+}
+
+.body form input{
+    border-radius: 1rem;
+    border: 1px solid gray;
+     background-color:rgb(247, 240, 240 ,0.4);
+    width: 100% !important;
+    color: black;
+    font-size: 1rem;
+}
+.body form U{
+    color: rgb(255, 56, 1);
+    font-family: poppin;
+    font-size: 1.2rem;
+    cursor: pointer;
+
+}
+
+.body form U:hover{
+    color: rgb(1, 1, 255);
+}
+.body form button{
+    font-size: 1.2rem;
+    background-color: black;
+    color: white;
+    padding: 1rem 3rem;
+    border-radius: 2.1rem;
+    transition: all 0.5s ease;
+}
+.body form button:hover{
+    border: 1px solid black;
+    background-color: rgb(243, 236, 236, 0.5);
+    color: black;
+}
+
+
+
+
+/* control panel css............... */
+.controlPanel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+
+}
+ .controlPanel form{
+    border: 1px solid rgb(127, 126, 126);
+    border-radius: 1rem;
+    max-width: 600px;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+}
+.controlPanel form textarea{
+    min-height: 8rem;
+}
+
+.controlPanel form button{
+    font-size: 1.2rem;
+    background-color: black;
+    color: white;
+    padding: 1rem 3rem;
+    border-radius: 2.1rem;
+    transition: all 0.5s ease;
+}
+.controlPanel form button:hover{
+    border: 1px solid black;
+    background-color: rgb(243, 236, 236, 0.5);
+    color: black;
+}

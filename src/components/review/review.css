@@ -131,12 +131,25 @@ padding: 1rem 2rem;
     width: 70%;
 }
 
+@media(min-width:994px){
+
+    .reviewPage .cards{
+        max-height: 80vh;
+        overflow: auto;
+        scrollbar-width: none;
+        padding: 0.5rem;
+    
+    
+    
+    }
+}
 
 .reviewPage .cards{
-    max-height: 80vh;
-    overflow: auto;
-    scrollbar-width: none;
-}
+        min-height: 80vh;
+        padding: 0.5rem;
+       padding-bottom: 2rem;
+
+    }
 /* .reviewPage .cards */
 
 .reviewPage .card{
@@ -253,9 +266,12 @@ padding: 1rem 2rem;
     font-size: 1.1rem;
     font-family: sans-serif;
     padding: 0.8rem 2rem;
+    z-index: 5;
+    cursor: pointer;
 }
 .reviewPage form button:hover .i{
       transform: rotate(-0deg);
+    
 }
 .reviewPage form button .i{
     transform: rotate(-60deg);
@@ -289,6 +305,7 @@ padding: 1rem 2rem;
 .reviewPage main .slide1{
     width: 100%;
 }
+
 
 .reviewPage form button{
     font-size: 0.9rem;

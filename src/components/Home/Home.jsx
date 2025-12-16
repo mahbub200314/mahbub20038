@@ -1,6 +1,6 @@
 import "./home.css"
 
-import avatar from "../../assets/myphoto/Avatar.png"
+
 import resume from '../../assets/myphoto/Untitled document.pdf'
 import { RiTailwindCssFill } from "react-icons/ri";
 import { BiLogoSass } from "react-icons/bi";

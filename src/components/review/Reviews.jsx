@@ -99,6 +99,7 @@ const Reviews = () => {
             }
            </div>
        </div>
+       
 {/* ............................................ */}
        <aside>
         <b>Leave a Review</b>
@@ -111,6 +112,7 @@ const Reviews = () => {
                     return(
                       <FaStar
                         key={index}
+                        color={value <= rating ? "yellow": ""}
                         onClick={()=> {
                           setRating(value) ;
                           console.log(rating)
