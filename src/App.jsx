@@ -1,21 +1,18 @@
-import { BrowserRouter, Route, Routes } from 'react-router'
+import {  Route, Routes } from 'react-router'
 import './App.css'
+import { lazy, Suspense } from 'react'
 import Home from './components/Home/Home'
 import Layout from './Layout'
 import CustomCursor from './components/cursor effect/CustomCursor'
 import Resume from './components/Resume'
-import { lazy, Suspense } from 'react'
-import Project from './components/Project/Project'
-import About from './components/About/About'
-import MyStory from './components/My Blogs/MyStory'
-import Reviews from './components/review/Reviews'
-import MyStoryDetails from './components/My Blogs/MyStoryDetails'
 import Login from '../adminPanel/Login'
 import ControlPanel from '../adminPanel/ControlPanel'
 
-const about = lazy(()=> import('./components/About/About'))
-const project = lazy(() => import('./components/Project/Project'))
-const mystory = lazy(()=> import('./components/My Blogs/MyStory'))
+const About = lazy(()=> import('./components/About/About'))
+const Project = lazy(() => import('./components/Project/Project'))
+const MyStory = lazy(()=> import('./components/MyBlogs/MyStory'))
+const Reviews = lazy(()=> import('./components/review/Reviews'))
+const MyStoryDetails = lazy(()=> import('./components/MyBlogs/MyStoryDetails'))
 function App() {
 
 
@@ -50,7 +47,7 @@ function App() {
             </Suspense>
           }/>
 
-          <Route path='/story/:id' element={
+          <Route path='story/:id' element={
             <Suspense fallback={<div>Loading...</div>} >
                <MyStoryDetails/>
             </Suspense>

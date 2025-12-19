@@ -38,12 +38,14 @@
 }
 
 .body form input{
+    padding: 1rem;
     border-radius: 1rem;
     border: 1px solid gray;
-     background-color:rgb(247, 240, 240 ,0.4);
+    background-color:rgb(247, 240, 240 ,0.4);
     width: 100% !important;
     color: black;
     font-size: 1rem;
+    font-family: sans-serif;
 }
 .body form U{
     color: rgb(255, 56, 1);
@@ -63,6 +65,11 @@
     padding: 1rem 3rem;
     border-radius: 2.1rem;
     transition: all 0.5s ease;
+    width: fit-content;
+    align-self: center;
+    border: none;
+    font-family: poppin;
+    cursor: pointer;
 }
 .body form button:hover{
     border: 1px solid black;
@@ -91,9 +98,16 @@
     flex-direction: column;
     gap: 1rem;
     
+    
+}
+.controlPanel form input{
+    padding: 1rem;
+    font-family: sans-serif;
 }
 .controlPanel form textarea{
     min-height: 8rem;
+    font-family: sans-serif;
+    padding: 0.5rem;
 }
 
 .controlPanel form button{
@@ -103,6 +117,9 @@
     padding: 1rem 3rem;
     border-radius: 2.1rem;
     transition: all 0.5s ease;
+    width: fit-content;
+    border: none;
+    align-self: center;
 }
 .controlPanel form button:hover{
     border: 1px solid black;
