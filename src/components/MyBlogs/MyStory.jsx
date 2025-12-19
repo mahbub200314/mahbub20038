@@ -5,6 +5,12 @@ import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router'
 import { db } from '../../firebase'
 
+//import myBanner from "../../assets/myphoto/mybanner.png"
+import myPhoto2 from "../../assets/myphoto/myphoto2.png"
+//import myPhoto2 from '../../assets/myphoto/okoliechykwuka - Overview.gif'
+import { MdOutlineWorkspacePremium } from "react-icons/md";
+import { MdOutlineWorkHistory } from "react-icons/md";
+import { FaPhoenixFramework } from "react-icons/fa6";
 const MyStory = () => {
   const navigate = useNavigate()
   const [experiences, setExperiences] = useState([]) // live data
@@ -27,7 +33,7 @@ const MyStory = () => {
     fetchData()
   }, [])
 
-  const limitWords = (word, limit = 15) => {
+  const limitWords = (word, limit = 20) => {
     const words = word.split(" ");
     if (words.length <= limit) return word
     return words.slice(0, limit).join(' ')
@@ -37,9 +43,32 @@ const MyStory = () => {
 
   return (
     <div className='story'>
-      <header>
+      {/* <header>
         <h2 style={{ fontFamily: "sans-serif" }}>See my experience and story</h2>
         <p>“Hi dear friends,<br></br> on this page you can explore my work-related experiences and stories.”</p>
+      </header> */}
+
+      <header className='headerBanner'>
+          <img className='myImg2' src={myPhoto2} alt="" />
+          <h2>My Journey & Story</h2>
+          <p className='description'>Welcome to my portfolio! Here I share my professional experiences,<br></br> achievements, and the story of my growth as a developer. Each moment has<br></br> shaped who I am today.</p>
+          <div className='ExperinceTitle'>
+            <p>
+               <FaPhoenixFramework className='icon'/>
+               <span>4+</span>
+               <span>Projects</span>
+             </p>
+               <p>
+               <MdOutlineWorkspacePremium className='icon'/>
+               <span>4+</span>
+               <span>Achievments</span>
+             </p>
+               <p>
+               <MdOutlineWorkHistory className='icon'/>
+               <span>2025</span>
+               <span>Active Year</span>
+             </p>
+          </div>
       </header>
 
       <div className='mainStory'>
@@ -51,8 +80,8 @@ const MyStory = () => {
               <span>{data.date}</span>
             </p>
             <span className='description'>
-              {limitWords(data.description, 15)}
-              {data.description.split(" ").length > 15 && (
+              {limitWords(data.description, 25)}
+              {data.description.split(" ").length > 25 && (
                 <span className='seeMore' onClick={() => navigate(`/story/${data.id}`)}> see more...</span>
               )}
             </span>

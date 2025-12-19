@@ -1,7 +1,6 @@
 import "./home.css"
 
 
-import resume from '../../assets/myphoto/Untitled document.pdf'
 import { RiTailwindCssFill } from "react-icons/ri";
 import { BiLogoSass } from "react-icons/bi";
 import { IoLogoFirebase } from "react-icons/io5";
