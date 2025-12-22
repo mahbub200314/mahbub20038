@@ -142,7 +142,7 @@ useEffect(()=>{
   const unsub = onSnapshot(collection(db, 'projects'), 
 (snapshot)=>{const list = snapshot.docs.map(doc => ({id: doc.id, ...doc.data() }))
   setDownload(list)
-  console.log(download)
+
 });
 return ()=> unsub()
 },[])
