@@ -71,10 +71,10 @@ const MyStory = () => {
       <div className='mainStory'>
         {experiences.map((data) => (
           <div className="card" key={data.id}>
-            <img loading='lazy' src={data.imageUrl} alt={data.title} />
+            <img loading='lazy' src={data?.imageUrl} alt={data.title} />
             <p> 
-              <b>{data.title}</b> 
-              <span>{data.date}</span>
+              <b>{data?.title}</b> 
+              <span>{data?.date}</span>
             </p>
             <span className='description'>
               {limitWords(data.description, 25)}
