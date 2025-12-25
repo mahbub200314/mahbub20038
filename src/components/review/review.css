@@ -99,6 +99,11 @@ section{
 .previewDiscription span b{
     font-size: 1.3rem;
     line-height: 1;
+    margin-bottom: 4px ;
+    color: yellow;
+    font-family: monospace;
+    
+
 
 }
 
@@ -112,7 +117,7 @@ hr{
 
 .reviewPage .filter button{
     
-    background-color: #1e2939;
+    background-color: #232527;
     color: whitesmoke;
     font-family: sans-serif;
     font-size: 1rem;
@@ -121,9 +126,11 @@ hr{
     padding:0.7rem 1.1rem;
     border-radius: 0.5rem;
     cursor: pointer;
-    
-
 }
+.reviewPage .filter button.active {
+    background-color: #2b7fff;
+}
+
 .reviewPage main{
 background-color: transparent;
 display: flex;
@@ -371,6 +378,7 @@ padding: 1rem 2rem;
 
     padding: 0.8rem 2rem;
 }
+
 
 .reviewPage{
     padding: 1rem;

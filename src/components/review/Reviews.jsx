@@ -15,7 +15,22 @@ const Reviews = () => {
   const [rating, setRating] = useState(0);
   const [loading, setLoading] = useState(false)
   const [formData, setFormData] = useState([])
+  const [selectCategory, setSelectCategory] =useState('All')
+  
 
+  // 5 star review 
+  const fiveStar = formData.filter(review => review.rating === 4).length;
+  const fiveStarReview = formData.length > 0 ? ((fiveStar / formData.length) * 100).toFixed(0) : 0;
+ 
+  //  average rating
+  const totalRating = formData.reduce((sum, review)=> sum + review.rating, 0); 
+  const averageRating = formData.length > 0 ?(totalRating / formData.length).toFixed(1) : 0; 
+  
+
+  const filterReviews  = selectCategory === 'All' ? formData : formData.filter(review => review.category === selectCategory)
+   const categoryFilter = (category)=>{
+     setSelectCategory(category)
+   }
   // login logic
   const googleLogin = async () => {
     try {
@@ -30,9 +45,6 @@ const Reviews = () => {
       console.log(error)
     }
   }
-
-
-
 
 
   // form data sent firebase.....
@@ -128,7 +140,7 @@ const Reviews = () => {
           <div className='previewDiscription'>
             <p>Average Rating</p>
 
-            <span><b>4.7</b> out of 5</span>
+            <span><b>{averageRating}</b> out of 5</span>
           </div>
         </div>
 
@@ -143,7 +155,7 @@ const Reviews = () => {
           </div>
           <div className='previewDiscription'>
             <p>Total Reviews</p>
-            <span><b>6</b> Reviews</span>
+            <span><b style={{color:"yellow"}}>{formData.length}</b> Reviews</span>
           </div>
         </div>
 
@@ -154,8 +166,8 @@ const Reviews = () => {
             <FaArrowTrendUp />
           </div>
           <div className='previewDiscription'>
-            <p>5-star Reviews</p>
-            <span><b>90%</b> Total</span>
+            <p>4-star Reviews</p>
+            <span><b>{fiveStarReview}%</b> Total</span>
           </div>
         </div>
       </section>
@@ -167,9 +179,13 @@ const Reviews = () => {
         <div className="slide1 ">
 
           <div className="filter">
-            <button>All</button><button>Landing Page</button>
-            <button>Admin Panel</button> <button>Functionality </button>
-            <button>Animation</button><button>UX & UI</button><button>Others</button>
+            <button className={selectCategory === "All" ? "active" : ""} onClick={()=>categoryFilter("All")} >All</button>
+            <button className={selectCategory === "Landing Page" ? "active" : ""} onClick={()=>categoryFilter('Landing page')}>Landing Page</button>
+            <button className={selectCategory === "Admin panel" ? "active" : ""} onClick={()=>categoryFilter('Admin panel')}>Admin Panel</button>
+             <button className={selectCategory === "Functionality" ? "active" : ""} onClick={()=>categoryFilter('Functionality')}>Functionality </button>
+            <button className={selectCategory === "Animation" ? "active" : ""} onClick={()=>categoryFilter('Animation')}>Animation</button>
+            <button className={selectCategory === "UX & UI" ? "active" : ""} onClick={()=>categoryFilter('UX & UI')}>UX & UI</button>
+            <button className={selectCategory === "Others" ? "active" : ""} onClick={()=>categoryFilter('Ohters')}>Others</button>
           </div>{/* marketing button */}
 
 
@@ -179,7 +195,7 @@ const Reviews = () => {
                 Loading reviews...
               </p>
             ): (
-              formData.map((data) => (
+              filterReviews.map((data) => (
                 <div className="card" key={data.id}>
                   <div className='title'>
                     <div className='rolesAndImg'>
@@ -188,7 +204,19 @@ const Reviews = () => {
                         <h3>{data.name}</h3>
                         <p>{data.usEmail}</p>
                         <p>{data.role}</p>
-                        <span>{data.rating} </span>
+
+        <div style={{marginTop:"0.3rem", marginBottom:"0.5rem"}}>
+          {[...Array(5)].map((_, index) => {
+            const starValue = index + 1;
+            return (
+              <FaStar
+                key={index}
+                color={starValue <= data.rating ? "#ffc107" : "#e4e5e9"}
+                size={18}
+              />
+            );
+          })}
+        </div>                        
                       </div>
                     </div>
                     <p className='p'>{data.category}</p>
