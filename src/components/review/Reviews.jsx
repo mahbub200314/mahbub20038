@@ -186,6 +186,7 @@ const Reviews = () => {
                       <img src={data.userPhoto || "default-avatar.png"} alt={data.name} />
                       <div className="role">
                         <h3>{data.name}</h3>
+                        <p>{data.usEmail}</p>
                         <p>{data.role}</p>
                         <span>{data.rating} </span>
                       </div>
