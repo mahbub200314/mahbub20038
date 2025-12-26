@@ -26,29 +26,31 @@ const ControlPanel = () => {
 
 
     // upload image to cloudinary
-    const uploadImg = async (photo) => {
-        const data = new FormData();
-        data.append("file", photo)
-        data.append("upload_preset", "portfolio") //preset namekj
+  const uploadImg = async (photo) => {
+  if (!photo) throw new Error("No image selected");
 
-        const res = await fetch(
-            "https://api.cloudinary.com/v1_1/drlvom5qf/image/upload",
-            {
-                method: 'POST',
-                body: data,
-            }
-        );
+  const data = new FormData();
+  data.append("file", photo);
+  data.append("upload_preset", "portfolio");
 
-        const result = await res.json();
-           console.log("Cloudinary response:", result); // 🔥 THIS LINE
+  const res = await fetch(
+    "https://api.cloudinary.com/v1_1/drlvom5qf/image/upload",
+    {
+      method: "POST",
+      body: data,
+    }
+  );
 
-           const imageUrl = result.secure_url || result.url
-       if (!imageUrl) {
-    throw new Error("upload img failed");
+  const result = await res.json();
+  console.log("Cloudinary response:", result);
+
+  if (!res.ok || !result.secure_url) {
+    throw new Error(result.error?.message || "Cloudinary upload failed");
   }
 
-        return result.secure_url
-    }
+  return result.secure_url;
+};
+
 
 
 
@@ -64,9 +66,14 @@ const ControlPanel = () => {
             const imageUrl = await uploadImg(photo);
 
             //save firestore
-            await addDoc(collection(db, "experiences"), {
-                title, date, description, imageUrl, createdAt: new Date()
-            });
+        await addDoc(collection(db, "experiences"), {
+      title,
+      date,
+      description,
+      photo: imageUrl,   // 🔥 always valid now
+      createdAt: new Date(),
+    });
+
 
             alert("experiences added succesfully")
 

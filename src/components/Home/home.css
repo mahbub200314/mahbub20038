@@ -2,21 +2,43 @@
 .home{
     position: relative;
     display: flex;
-    flex-direction: column;
+
     gap: 1rem;
     width: 100%;
-    min-height: 90dvh;
+    min-height: 100dvh;
     overflow-y: scroll;
     text-align: center;
     align-items: center;
- 
-    background: var(--bg-black);
+    justify-content: center;
+    /* background: var(--bg-black); */
     color: var(--text-white);
     padding-bottom: 75px;
-    padding-top: 5px;
-     
+    padding-top: 2.5rem;
+    margin-top: -2rem;
+    margin-bottom: -3rem;
+
+   /*background: #6441A5;   fallback for old browsers */
+   /* background: -webkit-linear-gradient(to right, #2a0845, #6441A5);  
+   background: linear-gradient(to right, #2a0845, #6441A5);  */
+
+     background: var(--bg-gradient);
 
    
+}
+.background{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: fit-content; 
+    text-align: center;
+    align-items: center;
+    min-height: 60vh;
+    border-radius:1.5rem;
+    padding: 2% 10%;
+    background: rgb(19, 18, 18, 40%);
+    
+
 }
 
 @media (max-width: 450px){

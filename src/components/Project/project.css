@@ -205,6 +205,11 @@ form button:hover{
   font-size: 1rem;
 }
 
+.modalContent textarea{
+   min-height: 6rem; 
+
+}
+
 .modalContent button {
   padding: 0.7rem 1.2rem;
   background-color: #1f2937;

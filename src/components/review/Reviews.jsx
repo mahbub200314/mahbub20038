@@ -128,7 +128,7 @@ const Reviews = () => {
     <div className='reviewPage'>
       <header>
         <h2>Client Reviews & Testimonials</h2>
-        <p>See what clients and collaborators have to say about working with me</p>
+        <p>Give me your Review what you think about me. How you feel working with me</p>
 
       </header>
 

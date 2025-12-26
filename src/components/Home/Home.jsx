@@ -17,7 +17,10 @@ import Animation from "../animation/Animation";
 
 function Home() {
     return (
-        <div className='home'>
+
+        <div className="home">
+         
+        <div className='background'>
 
             <div className="img">
 
@@ -53,6 +56,7 @@ function Home() {
                  Feel free to communicate openly with me at any time.
             </p>
 
+        </div>
         </div>
     )
 }

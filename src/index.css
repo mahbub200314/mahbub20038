@@ -19,6 +19,9 @@
   /* review page */
   --bg-reviewPage1:#000000;
   --bg-reviewPage:#080c14;
+
+   --bg-gradient: linear-gradient(to right, #2a0845, #6441A5);
+   --primary-gradient: linear-gradient(to right, #FF8660,#9A33FF);
 }
 
 .light-mode {
@@ -31,5 +34,8 @@
 --transfarent-about:rgba(226, 221, 221, 0.5);
  --bg-reviewPage1:aliceblue;
   --bg-reviewPage:#ffffff;
+
+  /* 🌤 light mode gradient */
+  --bg-gradient: linear-gradient(to right, #cecfd2, #2593b4);
 }
 
