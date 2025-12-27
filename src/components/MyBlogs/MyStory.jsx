@@ -31,7 +31,7 @@ const MyStory = () => {
     fetchData()
   }, [])
 
-  console.log(experiences)
+  
 
   const limitWords = (word, limit = 20) => {
     const words = word.split(" ");
