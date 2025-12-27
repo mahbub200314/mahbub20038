@@ -19,7 +19,7 @@ const Reviews = () => {
   
 
   // 5 star review 
-  const fiveStar = formData.filter(review => review.rating === 4).length;
+  const fiveStar = formData.filter(review => review.rating === 5).length;
   const fiveStarReview = formData.length > 0 ? ((fiveStar / formData.length) * 100).toFixed(0) : 0;
  
   //  average rating
@@ -166,7 +166,7 @@ const Reviews = () => {
             <FaArrowTrendUp />
           </div>
           <div className='previewDiscription'>
-            <p>4-star Reviews</p>
+            <p>5-star Reviews</p>
             <span><b>{fiveStarReview}%</b> Total</span>
           </div>
         </div>
