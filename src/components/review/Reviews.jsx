@@ -185,7 +185,7 @@ const Reviews = () => {
              <button className={selectCategory === "Functionality" ? "active" : ""} onClick={()=>categoryFilter('Functionality')}>Functionality </button>
             <button className={selectCategory === "Animation" ? "active" : ""} onClick={()=>categoryFilter('Animation')}>Animation</button>
             <button className={selectCategory === "UX & UI" ? "active" : ""} onClick={()=>categoryFilter('UX & UI')}>UX & UI</button>
-            <button className={selectCategory === "Others" ? "active" : ""} onClick={()=>categoryFilter('Ohters')}>Others</button>
+            <button className={selectCategory === "Others" ? "active" : ""} onClick={()=>categoryFilter('Others')}>Others</button>
           </div>{/* marketing button */}
 
 
