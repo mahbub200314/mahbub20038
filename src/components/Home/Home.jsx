@@ -1,5 +1,5 @@
 import "./home.css"
-
+import hero from "../../assets/hero.gif"
 
 import { RiTailwindCssFill } from "react-icons/ri";
 import { BiLogoSass } from "react-icons/bi";
@@ -24,8 +24,8 @@ function Home() {
 
             <div className="img">
 
-                <Animation />
-                {/* <img src={avatar} alt="" width={100}/> */}
+                {/* <Animation /> */}
+                <img src={hero} alt="" width={100}/>
             </div>
 
             <b>I do code and <br></br> make website <span>about it!</span></b>

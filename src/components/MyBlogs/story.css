@@ -18,7 +18,12 @@
 }
 
 .story .headerBanner{
-    background: linear-gradient(to right, #2563eb, #9333ea);
+    background-image: url('../../assets/giff.gif');
+    background-size: cover;          /* পুরো স্ক্রিন কভার করবে */
+    background-position: center;     /* মাঝে রাখবে */
+    background-repeat: no-repeat;
+    background-attachment: fixed;    /* স্ক্রল করলেও ছবি স্থির থাকবে (চাইলে) */
+    /* background: linear-gradient(to right, #2563eb, #9333ea); */
     min-height: 70vh;
     width: 100%;
    display: flex;
