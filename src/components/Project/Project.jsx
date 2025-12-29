@@ -201,7 +201,7 @@ const Project = () => {
       <div className="animation3">
         <Animation3 className='animation3rd'></Animation3>
       </div>
-      <h1><u>Here you Watch my some Projects</u></h1>
+      <h1><u>Here you can Watch my some Projects</u></h1>
 
 
       <button className='uploadButton'
