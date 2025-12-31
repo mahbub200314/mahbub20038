@@ -33,12 +33,14 @@ const Reviews = () => {
    }
   // login logic
   const googleLogin = async () => {
+
     try {
       const provider = new GoogleAuthProvider();
       const result = await signInWithPopup(auth, provider)
       alert("verified succesfully ❤️✌️")
-
+      
       setLogin(result)
+    
 
     } catch (error) {
       alert("something wrong")
@@ -264,7 +266,9 @@ const Reviews = () => {
               <option value="Others">Others</option>
             </select>
             <textarea name="review" id="review" placeholder='Enter Review'></textarea>
-            <div onClick={googleLogin} className='verifyReview'>Verify Your Review</div>
+
+            <div onClick={googleLogin} className={`verifyReview ${login ? "loginDone":""}`}>{login ? "verified Succesfully":"Verify Your Review"} </div>
+
             <button type="submit"><HiOutlinePaperAirplane className='i' /> Submit Review</button>
           </form>
         </aside>

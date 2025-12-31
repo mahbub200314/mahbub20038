@@ -2,7 +2,7 @@
 .home{
     position: relative;
     display: flex;
-
+    
     gap: 1rem;
     width: 100%;
     min-height: 100dvh;
@@ -12,8 +12,8 @@
     justify-content: center;
     /* background: var(--bg-black); */
     color: var(--text-white);
-    padding-bottom: 75px;
-    padding-top: 2.5rem;
+    padding-bottom: 95px;
+    padding-top: 3rem;
     margin-top: -2rem;
     margin-bottom: -3rem;
 
