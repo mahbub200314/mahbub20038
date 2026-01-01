@@ -6,7 +6,7 @@
     gap: 1rem;
     width: 100%;
     min-height: 100dvh;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
     text-align: center;
     align-items: center;
     justify-content: center;

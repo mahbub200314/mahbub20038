@@ -2,11 +2,12 @@ import './App.css'
 import TopNavbar from './Navigator/TopNavbar'
 import BottomNavbar from './Navigator/BottomNavbar'
 import { Outlet } from 'react-router'
+import ScrollManager from './scrollManager'
 
 const Layout = () => {
   return (
     <div className='layout'>
-
+       <ScrollManager/>
      <div className="top pt-50px">
            <TopNavbar/>
      </div>
