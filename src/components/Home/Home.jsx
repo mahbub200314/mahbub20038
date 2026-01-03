@@ -11,7 +11,6 @@ import { SiRedux } from "react-icons/si";
 import { RiNextjsLine } from "react-icons/ri";
 
 import { Link } from "react-router";
-import Animation from "../animation/Animation";
 
 
 
@@ -24,7 +23,7 @@ function Home() {
 
             <div className="img">
 
-                {/* <Animation /> */}
+                
                 <img src={hero} alt="" width={100}/>
             </div>
 
