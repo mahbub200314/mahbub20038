@@ -33,15 +33,15 @@
 
 
 
-.project .main , .slide2{
+.project .main .slide1, .slide2{
     width: 50%;
 }
 .project .main .slide1{
     border: 2px solid transparent;
     overflow: hidden;
     border-radius: 10px;
+    min-height: 350px;
     
-    height: 100%;
 }
 
 
